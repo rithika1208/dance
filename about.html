@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse Dance Company | About</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { accent: '#14f195', 'accent-2': '#6d28d9' }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100" data-page="about">
+     <!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+
+    <!-- LEFT -->
+    <div class="nav-left">
+      <button class="menu-btn" onclick="toggleMobileMenu()">☰</button>
+      <a href="index.html" class="logo-text">Pulse Dance Co.</a>
+    </div>
+
+    <!-- RIGHT (DESKTOP MENU) -->
+    <div class="nav-right" id="desktop-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="classes.html">Classes</a>
+      <a href="trainers.html">Trainers</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="nav-btn">Join Now</a>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="classes.html">Classes</a>
+    <a href="trainers.html">Trainers</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="mobile-btn">Join Now</a>
+  </div>
+</nav>
+
+
+
+    <main class="pt-28 md:pt-32">
+      <section class="max-w-6xl mx-auto px-4 pb-16 md:pb-20">
+        <div class="glass rounded-3xl p-8 md:p-12 hero-gradient reveal">
+          <p class="section-title text-sm uppercase tracking-[0.2em] text-slate-400">About</p>
+          <h1 class="text-4xl font-bold mt-4">Pulse Dance Company</h1>
+          <p class="text-slate-300 mt-4 max-w-3xl">
+            Established in 2010, Pulse Dance Company is a New York-based academy and performance house dedicated to shaping versatile, industry-ready dancers. We fuse foundational technique with commercial choreography, empowering artists to thrive in studios, on stages, and on camera.
+          </p>
+          <div class="grid md:grid-cols-3 gap-6 mt-8">
+            <div class="glass rounded-2xl p-6 card-hover">
+              <p class="text-3xl font-semibold">12+</p>
+              <p class="text-slate-400 text-sm mt-1">Years producing shows, tours, and training programs.</p>
+            </div>
+            <div class="glass rounded-2xl p-6 card-hover">
+              <p class="text-3xl font-semibold">1500+</p>
+              <p class="text-slate-400 text-sm mt-1">Alumni signed to agencies, Broadway, and major artists.</p>
+            </div>
+            <div class="glass rounded-2xl p-6 card-hover">
+              <p class="text-3xl font-semibold">30</p>
+              <p class="text-slate-400 text-sm mt-1">Weekly sessions across foundations, performance, and crews.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-6xl mx-auto px-4 pb-16 md:pb-20 grid md:grid-cols-2 gap-8 items-center reveal">
+        <div class="space-y-4">
+          <p class="section-title text-sm uppercase tracking-[0.2em] text-slate-400">Philosophy</p>
+          <h2 class="text-3xl font-semibold">Technique meets storytelling</h2>
+          <p class="text-slate-300">
+            We focus on clean lines, rhythm, and intentional movement, then layer in performance quality that commands attention. Each program blends conditioning, musicality drills, and choreographic labs to build a confident, adaptable dancer.
+          </p>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li class="flex gap-3 items-start"><span class="h-2 w-2 rounded-full bg-accent mt-2"></span>Small class sizes for real-time feedback and camera review.</li>
+            <li class="flex gap-3 items-start"><span class="h-2 w-2 rounded-full bg-accent mt-2"></span>Performance tracks with quarterly showcases and festival slots.</li>
+            <li class="flex gap-3 items-start"><span class="h-2 w-2 rounded-full bg-accent mt-2"></span>Career mentorship: reels, auditions, agent prep, and branding.</li>
+          </ul>
+        </div>
+        <div class="gallery-card h-full">
+          <img src="https://images.unsplash.com/photo-1488218576539-6c658c709f0e?auto=format&fit=crop&w=1200&q=80" alt="Dancers on stage" class="h-full" />
+        </div>
+      </section>
+
+      <section class="max-w-6xl mx-auto px-4 pb-16 md:pb-24 reveal">
+        <div class="glass rounded-3xl p-8 md:p-10">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <p class="section-title text-sm uppercase tracking-[0.2em] text-slate-400">Milestones</p>
+              <h2 class="text-3xl font-semibold mt-3">Highlights we're proud of</h2>
+            </div>
+            <a href="gallery.html" class="btn btn-outline">View reels</a>
+          </div>
+          <div class="grid md:grid-cols-3 gap-6 mt-8">
+            <div class="glass rounded-2xl p-6 card-hover">
+              <p class="font-semibold">Tour Collaborations</p>
+              <p class="text-slate-400 text-sm mt-2">Choreography and dancers for global tours with award-winning artists.</p>
+            </div>
+            <div class="glass rounded-2xl p-6 card-hover">
+              <p class="font-semibold">TV & Film</p>
+              <p class="text-slate-400 text-sm mt-2">Movement direction for commercials, streaming specials, and live TV.</p>
+            </div>
+            <div class="glass rounded-2xl p-6 card-hover">
+              <p class="font-semibold">Community</p>
+              <p class="text-slate-400 text-sm mt-2">Scholarships, outreach classes, and free community jams every month.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-6xl mx-auto px-4 pb-20 md:pb-24 reveal">
+        <div class="glass rounded-3xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <p class="section-title text-sm uppercase tracking-[0.2em] text-slate-400">Visit</p>
+            <h2 class="text-3xl font-semibold mt-3">Come see the space</h2>
+            <p class="text-slate-400 mt-2 max-w-xl">Tour our Midtown studio, peek into a session, and chat with our team.</p>
+          </div>
+          <a href="contact.html" class="btn">Schedule a visit</a>
+        </div>
+      </section>
+    </main>
+
+   <footer class="dance-footer">
+  <div class="footer-container">
+
+    <!-- LEFT SIDE -->
+    <div class="footer-left">
+      <div class="footer-logo">PD</div>
+      <h3>Pulse Dance Co.</h3>
+      <p>
+        NYC-based academy elevating dancers through training,
+        performance, and community.
+      </p>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="footer-right">
+
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="classes.html">Classes</a>
+        <a href="trainers.html">Trainers</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <a href="classes.html">Dance Classes</a>
+        <a href="classes.html#crews">Crews</a>
+        <a href="classes.html#private">Private Training</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>305 W 38th St, New York</p>
+        <p>(212) 555-0192</p>
+        <a href="mailto:hello@pulsedance.co">hello@pulsedance.co</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © <span id="year"></span> Pulse Dance Company. All rights reserved.
+  </div>
+</footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
