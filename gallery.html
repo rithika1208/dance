@@ -1,132 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pulse Dance Company | Gallery</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = { theme: { extend: { colors: { accent: '#14f195', 'accent-2': '#6d28d9' } } } };
-    </script>
-  </head>
-  <body class="bg-slate-950 text-slate-100" data-page="gallery">
-     <!-- NAVBAR -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ================= SEO FOR GALLERY PAGE ================= -->
+  <title>Gallery | Pulse Dance Company</title>
+  <meta name="description" content="Explore Pulse Dance Company’s gallery featuring high-quality photos and videos of performances, rehearsals, and special events. Experience the energy and creativity of our dancers." />
+  <meta name="keywords" content="dance gallery, dance performance photos, rehearsal videos, dance events gallery, Pulse Dance Company gallery" />
+  <meta name="author" content="Pulse Dance Company" />
+
+  <!-- SOCIAL PREVIEW -->
+  <meta property="og:title" content="Gallery | Pulse Dance Company" />
+  <meta property="og:description" content="Browse stunning visuals from our performances, rehearsals, and dance events." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { accent: '#14f195', 'accent-2': '#6d28d9' }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-slate-950 text-slate-100" data-page="gallery">
+
+<!-- ================= NAVBAR (SAME) ================= -->
 <nav class="navbar">
   <div class="nav-container">
 
-    <!-- LEFT -->
     <div class="nav-left">
       <button class="menu-btn" onclick="toggleMobileMenu()">☰</button>
       <a href="index.html" class="logo-text">Pulse Dance Co.</a>
     </div>
 
-    <!-- RIGHT (DESKTOP MENU) -->
     <div class="nav-right" id="desktop-menu">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="classes.html">Classes</a>
-      <a href="trainers.html">Trainers</a>
+      <a href="policies.html">Policies</a>
       <a href="gallery.html">Gallery</a>
-      <a href="contact.html" class="nav-btn">Join Now</a>
+      <a href="contact.html" class="nav-btn">Enroll Now</a>
     </div>
   </div>
 
-  <!-- MOBILE MENU -->
   <div id="mobile-menu" class="mobile-menu">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="classes.html">Classes</a>
-    <a href="trainers.html">Trainers</a>
+    <a href="policies.html">Policies</a>
     <a href="gallery.html">Gallery</a>
-    <a href="contact.html" class="mobile-btn">Join Now</a>
+    <a href="contact.html" class="mobile-btn">Enroll Now</a>
   </div>
 </nav>
 
+<!-- ================= MAIN ================= -->
+<main class="pt-28 md:pt-32">
 
+<!-- ================= GALLERY INTRO ================= -->
+<section class="max-w-6xl mx-auto px-4 pb-16 md:pb-20">
+  <div class="glass rounded-3xl p-8 md:p-12 hero-gradient reveal">
+    <p class="section-title text-sm uppercase tracking-[0.2em] text-slate-400">Gallery</p>
+    <h1 class="text-4xl font-bold mt-4">Moments in Motion</h1>
+    <p class="text-slate-300 mt-4 max-w-3xl">
+      Discover the energy of Pulse Dance Company through our curated collection of performances, rehearsals, and special events. Each frame captures the passion, dedication, and creativity of our dancers.
+    </p>
+  </div>
+</section>
 
-    <main class="pt-28 md:pt-32">
-      <section class="max-w-6xl mx-auto px-4 pb-16 md:pb-20">
-        <div class="glass rounded-3xl p-8 md:p-12 hero-gradient reveal">
-          <p class="section-title text-sm uppercase tracking-[0.2em] text-slate-400">Gallery</p>
-          <h1 class="text-4xl font-bold mt-4">Moments that move</h1>
-          <p class="text-slate-300 mt-4 max-w-3xl">
-            From stage lights to studio grit—our dancers, showcases, and behind-the-scenes moments captured in motion.
-          </p>
-          <div class="flex flex-wrap gap-3 mt-6 text-sm">
-            <span class="chip">Showcases</span>
-            <span class="chip">Training</span>
-            <span class="chip">Crews</span>
-            <span class="chip">Concept videos</span>
-          </div>
-        </div>
-      </section>
+<!-- ================= PHOTO GALLERY ================= -->
+<!-- ================= SIMPLE IMAGE GALLERY ================= -->
+<section class="max-w-6xl mx-auto px-4 py-16">
 
-      <section class="max-w-6xl mx-auto px-4 pb-16 md:pb-20 reveal">
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="gallery-card h-64">
-            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1200&q=80" alt="Heels performance" />
-          </div>
-          <div class="gallery-card h-64">
-            <img src="https://images.unsplash.com/photo-1515165562835-c4c1b0b1b099?auto=format&fit=crop&w=1200&q=80" alt="Studio training" />
-          </div>
-          <div class="gallery-card h-64">
-            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1200&q=80" alt="Choreography session" />
-          </div>
-          <div class="gallery-card h-72 sm:col-span-2">
-            <img src="https://images.unsplash.com/photo-1438557068880-c5f474830377?auto=format&fit=crop&w=1400&q=80" alt="Stage performance" />
-          </div>
-          <div class="gallery-card h-72">
-            <img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=1200&q=80" alt="Afro dance energy" />
-          </div>
-          <div class="gallery-card h-64 sm:col-span-2 lg:col-span-1">
-            <img src="https://images.unsplash.com/photo-1515165562835-c4c1b0b1b099?auto=format&fit=crop&w=1200&q=80" alt="Crew rehearsal" />
-          </div>
-        </div>
-      </section>
+  <h2 class="text-3xl font-semibold mb-8 text-center">Gallery</h2>
 
-      <section class="max-w-6xl mx-auto px-4 pb-16 md:pb-20 reveal">
-        <div class="glass rounded-3xl p-8 md:p-12 flex flex-col lg:flex-row gap-8">
-          <div class="flex-1">
-            <p class="section-title text-sm uppercase tracking-[0.2em] text-slate-400">Spotlight</p>
-            <h2 class="text-3xl font-semibold mt-3">Concept video: Neon Pulse</h2>
-            <p class="text-slate-300 mt-3">
-              A fusion of urban choreography and cinematic lighting. Shot in Brooklyn with our pro team and creative direction by Mara Lewis.
-            </p>
-            <div class="flex flex-wrap gap-3 mt-4 text-xs text-slate-300">
-              <span class="badge">4K Production</span>
-              <span class="badge">Heels</span>
-              <span class="badge">Original choreography</span>
-            </div>
-            <a href="contact.html" class="btn btn-outline mt-6 inline-flex">Book a video shoot</a>
-          </div>
-          <div class="flex-1">
-            <div class="gallery-card h-full min-h-[220px]">
-              <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1400&q=80" alt="Video still" />
-            </div>
-          </div>
-        </div>
-      </section>
+  <!-- ROW 1 -->
+  <div class="gallery-row">
+    <img src="images/dan1.jpg" alt="dance 1">
+    <img src="images/dan2.jpg" alt="dance 2">
+    <img src="images/dan3.jpg" alt="dance 3">
+  </div>
 
-      <section class="max-w-6xl mx-auto px-4 pb-20 md:pb-24 reveal">
-        <div class="glass rounded-3xl p-8 md:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-          <div>
-            <p class="section-title text-sm uppercase tracking-[0.2em] text-slate-400">Create with us</p>
-            <h3 class="text-2xl font-semibold mt-3">Need choreography or media?</h3>
-            <p class="text-slate-400 mt-2">Campaigns, music videos, weddings, brand launches—we choreograph and produce.</p>
-          </div>
-          <div class="flex gap-3">
-            <a href="classes.html" class="btn btn-outline">Join a class</a>
-            <a href="contact.html" class="btn">Request a quote</a>
-          </div>
-        </div>
-      </section>
-    </main>
+  <!-- ROW 2 -->
+  <div class="gallery-row">
+    <img src="images/dan4.jpg" alt="dance 4">
+    <img src="images/dan5.jpg" alt="dance 5">
+    <img src="images/dan6.jpg" alt="dance 6">
+  </div>
 
-   <footer class="dance-footer">
+  <!-- ROW 3 -->
+  <div class="gallery-row">
+    <img src="images/dan7.jpg" alt="dance 7">
+    <img src="images/dan8.jpg" alt="dance 8">
+    <img src="images/dan9.jpg" alt="dance 9">
+    <img src="images/dan10.jpg" alt="dance 10">
+  </div>
+
+</section>
+
+<!-- ================= VIDEO GALLERY ================= -->
+<section class="max-w-6xl mx-auto px-4 pb-20 md:pb-24 reveal">
+  <h2 class="text-3xl font-semibold mb-8">Video Highlights</h2>
+
+  <div class="grid md:grid-cols-2 gap-8">
+
+    <div class="glass rounded-2xl overflow-hidden">
+      <iframe class="w-full h-64 md:h-80"
+        src="https://www.youtube.com/embed/1G4isv_Fylg"
+        title="Dance Performance Video"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+      <p class="p-4 text-slate-300 text-sm">Stage performance – Annual showcase</p>
+    </div>
+
+    <div class="glass rounded-2xl overflow-hidden">
+      <iframe class="w-full h-64 md:h-80"
+        src="https://www.youtube.com/embed/9ZfN87gSjvI"
+        title="Dance Rehearsal Video"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+      <p class="p-4 text-slate-300 text-sm">Behind the scenes – Rehearsal vibes</p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER (SAME) ================= -->
+<footer class="dance-footer">
   <div class="footer-container">
 
-    <!-- LEFT SIDE -->
     <div class="footer-left">
       <div class="footer-logo">PD</div>
       <h3>Pulse Dance Co.</h3>
@@ -136,25 +145,23 @@
       </p>
     </div>
 
-    <!-- RIGHT SIDE -->
     <div class="footer-right">
 
       <div class="footer-col">
         <h4>Pages</h4>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="classes.html">Classes</a>
-        <a href="trainers.html">Trainers</a>
+        <a href="policies.html">Policies</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
       </div>
 
-      <div class="footer-col">
+      <!-- <div class="footer-col">
         <h4>Programs</h4>
         <a href="classes.html">Dance Classes</a>
         <a href="classes.html#crews">Crews</a>
         <a href="classes.html#private">Private Training</a>
-      </div>
+      </div> -->
 
       <div class="footer-col">
         <h4>Contact</h4>
@@ -171,6 +178,6 @@
   </div>
 </footer>
 
-    <script src="js/script.js"></script>
-  </body>
+<script src="js/script.js"></script>
+</body>
 </html>

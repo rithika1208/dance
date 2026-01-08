@@ -354,6 +354,41 @@ body {
   padding: 18px 10px 30px;
   border-top: 1px solid #1f2933;
 }
+/* ROW CONTAINER */
+.gallery-row{
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+/* IMAGES */
+.gallery-row img{
+  flex: 1;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+/* HOVER EFFECT */
+.gallery-row img:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px){
+  .gallery-row{
+    flex-wrap: wrap;
+  }
+
+  .gallery-row img{
+    width: 48%;
+  }
+}
+
+
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px){

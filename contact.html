@@ -3,137 +3,226 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pulse Dance Company | Contact</title>
+
+    <!-- ================= SEO FOR CONTACT PAGE ================= -->
+    <title>Contact Pulse Dance Company | Get in Touch</title>
+
+    <meta name="description" content="Contact Pulse Dance Company for dance classes, choreography, and collaborations. Reach us via phone, email, or our contact form. Visit our studio in New York or find us on social media." />
+    <meta name="keywords" content="contact Pulse Dance Company, dance studio contact, dance academy phone number, dance classes NYC contact, choreography inquiries" />
+    <meta name="author" content="Pulse Dance Company" />
+
+    <!-- SOCIAL PREVIEW -->
+    <meta property="og:title" content="Contact Pulse Dance Company" />
+    <meta property="og:description" content="Have questions about classes or collaborations? Reach Pulse Dance Company by phone, email, or visit our studio in NYC." />
+    <meta property="og:type" content="website" />
+
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = { theme: { extend: { colors: { accent: '#14f195', 'accent-2': '#6d28d9' } } } };
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { accent: '#14f195', 'accent-2': '#6d28d9' }
+          }
+        }
+      };
     </script>
   </head>
+
   <body class="bg-slate-950 text-slate-100" data-page="contact">
-     <!-- NAVBAR -->
+
+<!-- ================= NAVBAR ================= -->
 <nav class="navbar">
   <div class="nav-container">
 
-    <!-- LEFT -->
     <div class="nav-left">
       <button class="menu-btn" onclick="toggleMobileMenu()">☰</button>
       <a href="index.html" class="logo-text">Pulse Dance Co.</a>
     </div>
 
-    <!-- RIGHT (DESKTOP MENU) -->
     <div class="nav-right" id="desktop-menu">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="classes.html">Classes</a>
-      <a href="trainers.html">Trainers</a>
+      <a href="policies.html">Policies</a>
       <a href="gallery.html">Gallery</a>
-      <a href="contact.html" class="nav-btn">Join Now</a>
+      <a href="contact.html" class="nav-btn">Enroll Now</a>
     </div>
   </div>
 
-  <!-- MOBILE MENU -->
   <div id="mobile-menu" class="mobile-menu">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="classes.html">Classes</a>
-    <a href="trainers.html">Trainers</a>
+    <a href="policies.html">Policies</a>
     <a href="gallery.html">Gallery</a>
-    <a href="contact.html" class="mobile-btn">Join Now</a>
+    <a href="contact.html" class="mobile-btn">Enroll Now</a>
   </div>
 </nav>
 
+<!-- ================= MAIN ================= -->
+<main class="pt-28 md:pt-32">
+
+<!-- ================= CONTACT INTRO ================= -->
+<section class="max-w-6xl mx-auto px-4 pb-16 md:pb-20">
+  <div class="glass rounded-3xl p-8 md:p-12 hero-gradient reveal">
+    <p class="section-title text-sm uppercase tracking-[0.2em] text-slate-400">Contact Us</p>
+    <h1 class="text-4xl font-bold mt-4">We’d love to hear from you</h1>
+    <p class="text-slate-300 mt-4 max-w-3xl">
+      Have a question about our dance classes, choreography services, or collaborations?  
+      Reach out using the form below or connect with us directly — our team is happy to help!
+    </p>
+  </div>
+</section>
+
+<!-- ================= CONTACT FORM + INFO ================= -->
+<section class="max-w-6xl mx-auto px-4 pb-16 md:pb-20 grid lg:grid-cols-5 gap-10 reveal">
+
+  <!-- FORM -->
+  <div class="lg:col-span-3 glass rounded-3xl p-10">
+
+  <h2 class="text-2xl font-semibold mb-2">Send us a message</h2>
+  <p class="text-slate-400 text-sm mb-6">
+    Fill in the form and we’ll get back to you shortly.
+  </p>
+
+  <!-- FORM WRAPPER -->
+  <div style="max-width:420px">
+
+    <form>
+
+      <!-- NAME -->
+      <div style="margin-bottom:14px">
+        <label style="display:block; font-size:14px; color:#9ca3af; margin-bottom:4px;">
+          Full Name
+        </label>
+        <input type="text" placeholder="Enter your name"
+          style="
+            width:100%;
+            padding:10px 12px;
+            border-radius:6px;
+            border:1px solid #374151;
+            background:#020617;
+            color:#e5e7eb;
+            outline:none;
+          ">
+      </div>
+
+      <!-- EMAIL -->
+      <div style="margin-bottom:14px">
+        <label style="display:block; font-size:14px; color:#9ca3af; margin-bottom:4px;">
+          Email Address
+        </label>
+        <input type="email" placeholder="Enter your email"
+          style="
+            width:100%;
+            padding:10px 12px;
+            border-radius:6px;
+            border:1px solid #374151;
+            background:#020617;
+            color:#e5e7eb;
+            outline:none;
+          ">
+      </div>
+
+      <!-- MESSAGE -->
+      <div style="margin-bottom:18px">
+        <label style="display:block; font-size:14px; color:#9ca3af; margin-bottom:4px;">
+          Message
+        </label>
+        <textarea rows="4" placeholder="Type your message here..."
+          style="
+            width:100%;
+            padding:10px 12px;
+            border-radius:6px;
+            border:1px solid #374151;
+            background:#020617;
+            color:#e5e7eb;
+            outline:none;
+            resize:none;
+          "></textarea>
+      </div>
+
+      <!-- BUTTON -->
+      <button type="submit"
+        style="
+          padding:10px 24px;
+          border-radius:9999px;
+          background:linear-gradient(135deg,#14f195,#6d28d9);
+          color:#000;
+          font-weight:600;
+          border:none;
+          cursor:pointer;
+        ">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+</div>
 
 
-    <main class="pt-28 md:pt-32">
-      <section class="max-w-6xl mx-auto px-4 pb-16 md:pb-20">
-        <div class="glass rounded-3xl p-8 md:p-12 hero-gradient reveal">
-          <p class="section-title text-sm uppercase tracking-[0.2em] text-slate-400">Contact</p>
-          <h1 class="text-4xl font-bold mt-4">Let’s build something unforgettable</h1>
-          <p class="text-slate-300 mt-4 max-w-3xl">
-            Whether you’re booking a class, choreography, or a full-scale production, tell us your vision and we’ll move with it.
-          </p>
-          <div class="flex flex-wrap gap-3 mt-6 text-sm">
-            <span class="chip">Classes & workshops</span>
-            <span class="chip">Creative direction</span>
-            <span class="chip">Private coaching</span>
-          </div>
-        </div>
-      </section>
+  <!-- CONTACT DETAILS -->
+  <div class="lg:col-span-2 flex flex-col gap-6">
 
-      <section class="max-w-6xl mx-auto px-4 pb-16 md:pb-20 grid lg:grid-cols-5 gap-10 reveal">
-        <div class="lg:col-span-3 glass rounded-3xl p-8 md:p-10">
-          <h2 class="text-2xl font-semibold">Send a message</h2>
-          <p class="text-slate-400 text-sm mt-2">We respond within one business day.</p>
-          <form class="mt-6 grid gap-4">
-            <div class="grid md:grid-cols-2 gap-4">
-              <input type="text" placeholder="Full name" class="w-full rounded-xl bg-slate-900/60 border border-slate-700 px-4 py-3 focus:border-accent focus:outline-none transition" />
-              <input type="email" placeholder="Email" class="w-full rounded-xl bg-slate-900/60 border border-slate-700 px-4 py-3 focus:border-accent focus:outline-none transition" />
-            </div>
-            <input type="text" placeholder="Phone (optional)" class="w-full rounded-xl bg-slate-900/60 border border-slate-700 px-4 py-3 focus:border-accent focus:outline-none transition" />
-            <select class="w-full rounded-xl bg-slate-900/60 border border-slate-700 px-4 py-3 focus:border-accent focus:outline-none transition text-slate-300">
-              <option>Book a class</option>
-              <option>Choreography / creative direction</option>
-              <option>Private coaching</option>
-              <option>Brand / video production</option>
-              <option>Other</option>
-            </select>
-            <textarea rows="4" placeholder="Tell us about your project or goals" class="w-full rounded-xl bg-slate-900/60 border border-slate-700 px-4 py-3 focus:border-accent focus:outline-none transition"></textarea>
-            <button type="submit" class="btn w-full md:w-auto">Send message</button>
-          </form>
-        </div>
+    <!-- ADDRESS -->
+    <div class="glass rounded-3xl p-6 md:p-7">
+      <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Address</p>
+      <h3 class="text-xl font-semibold mt-2">Our Studio</h3>
+      <p class="text-slate-300 mt-2">305 W 38th St, New York, NY</p>
+      <p class="text-slate-400 text-sm mt-1">Mon – Sat · 9:00 AM – 9:00 PM</p>
+    </div>
 
-        <div class="lg:col-span-2 flex flex-col gap-6">
-          <div class="glass rounded-3xl p-6 md:p-7">
-            <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Studio</p>
-            <h3 class="text-xl font-semibold mt-2">Visit us</h3>
-            <p class="text-slate-300 mt-2">305 W 38th St, New York, NY</p>
-            <p class="text-slate-400 text-sm mt-1">Open Mon–Sat · 9a–9p</p>
-            <a href="https://maps.google.com" class="btn btn-outline mt-4 inline-flex">Open in Maps</a>
-          </div>
-          <div class="glass rounded-3xl p-6 md:p-7">
-            <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Contact</p>
-            <div class="mt-3 space-y-2 text-slate-300">
-              <p class="font-semibold">Call</p>
-              <p class="text-slate-400">(212) 555-0192</p>
-              <p class="font-semibold mt-3">Email</p>
-              <a href="mailto:hello@pulsedance.co" class="text-accent hover:underline">hello@pulsedance.co</a>
-              <p class="font-semibold mt-3">Social</p>
-              <div class="flex gap-3 text-sm text-slate-400">
-                <a href="#" class="footer-link">Instagram</a>
-                <a href="#" class="footer-link">YouTube</a>
-                <a href="#" class="footer-link">TikTok</a>
-              </div>
-            </div>
-          </div>
-          <div class="glass rounded-3xl p-6 md:p-7">
-            <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Need speed?</p>
-            <h3 class="text-xl font-semibold mt-2">Book a call</h3>
-            <p class="text-slate-300 mt-2">15-minute discovery calls for projects and media productions.</p>
-            <a href="classes.html" class="btn mt-4 inline-flex">Schedule</a>
-          </div>
-        </div>
-      </section>
+    <!-- PHONE & EMAIL -->
+    <div class="glass rounded-3xl p-6 md:p-7">
+      <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Get in Touch</p>
+      <div class="mt-3 space-y-2 text-slate-300">
+        <p class="font-semibold">Phone</p>
+        <p class="text-slate-400">(212) 555-0192</p>
 
-      <section class="max-w-6xl mx-auto px-4 pb-20 md:pb-24 reveal">
-        <div class="glass rounded-3xl p-8 md:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-          <div>
-            <p class="section-title text-sm uppercase tracking-[0.2em] text-slate-400">Collaborations</p>
-            <h3 class="text-2xl font-semibold mt-3">Brands, artists, weddings</h3>
-            <p class="text-slate-400 mt-2">From flash mobs to full creative direction—let’s choreograph your moment.</p>
-          </div>
-          <div class="flex gap-3">
-            <a href="gallery.html" class="btn btn-outline">View work</a>
-            <a href="#top" class="btn">Start now</a>
-          </div>
-        </div>
-      </section>
-    </main>
+        <p class="font-semibold mt-3">Email</p>
+        <a href="mailto:hello@pulsedance.co" class="text-accent hover:underline">
+          hello@pulsedance.co
+        </a>
+      </div>
+    </div>
 
-    <footer class="dance-footer">
+    <!-- SOCIAL LINKS -->
+    <div class="glass rounded-3xl p-6 md:p-7">
+      <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Follow Us</p>
+      <div class="flex gap-4 mt-3 text-slate-400">
+        <a href="#" class="hover:text-accent">Instagram</a>
+        <a href="#" class="hover:text-accent">YouTube</a>
+        <a href="#" class="hover:text-accent">TikTok</a>
+        <a href="#" class="hover:text-accent">Facebook</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= GOOGLE MAP ================= -->
+<section class="max-w-6xl mx-auto px-4 pb-20 md:pb-24 reveal">
+  <div class="glass rounded-3xl p-4 md:p-6">
+    <h2 class="text-2xl font-semibold mb-4">Find us on the map</h2>
+    <div class="rounded-2xl overflow-hidden border border-slate-700">
+      <iframe
+        src="https://www.google.com/maps?q=305+W+38th+St,+New+York,+NY&output=embed"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER (UNCHANGED) ================= -->
+<footer class="dance-footer">
   <div class="footer-container">
 
-    <!-- LEFT SIDE -->
     <div class="footer-left">
       <div class="footer-logo">PD</div>
       <h3>Pulse Dance Co.</h3>
@@ -143,25 +232,23 @@
       </p>
     </div>
 
-    <!-- RIGHT SIDE -->
     <div class="footer-right">
 
       <div class="footer-col">
         <h4>Pages</h4>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="classes.html">Classes</a>
-        <a href="trainers.html">Trainers</a>
+        <a href="policies.html">Policies</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
       </div>
 
-      <div class="footer-col">
+      <!-- <div class="footer-col">
         <h4>Programs</h4>
         <a href="classes.html">Dance Classes</a>
         <a href="classes.html#crews">Crews</a>
         <a href="classes.html#private">Private Training</a>
-      </div>
+      </div> -->
 
       <div class="footer-col">
         <h4>Contact</h4>
@@ -178,6 +265,6 @@
   </div>
 </footer>
 
-    <script src="js/script.js"></script>
-  </body>
+<script src="js/script.js"></script>
+</body>
 </html>
