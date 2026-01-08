@@ -94,34 +94,39 @@ body {
 }
 
 /* MOBILE MENU */
+.menu-btn {
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* MOBILE MENU */
 .mobile-menu {
   display: none;
-  background: #0b0f1a;
-  padding: 18px 22px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  background: white;
+  padding: 16px 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  
 }
 
 .mobile-menu a {
   display: block;
-  padding: 12px 0;
-  color: #e5e7eb;
+  padding: 10px 0;
+  color: #374151;
   text-decoration: none;
   font-weight: 500;
 }
 
-.mobile-menu a:hover {
-  color: #14f195;
-}
-
 .mobile-btn {
-  margin-top: 14px;
+  margin-top: 12px;
   display: block;
-  background: linear-gradient(90deg,#14f195,#6d28d9);
-  color: #0b0f1a;
-  padding: 12px;
-  border-radius: 999px;
+  background: linear-gradient(90deg,#6d28d9,#4f46e5);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
   text-align: center;
-  font-weight: 600;
 }
 
 /* ================= RESPONSIVE ================= */
