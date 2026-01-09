@@ -72,34 +72,41 @@
 </section>
 
 <!-- ================= PHOTO GALLERY ================= -->
-<!-- ================= SIMPLE IMAGE GALLERY ================= -->
 <section class="max-w-6xl mx-auto px-4 py-16">
 
   <h2 class="text-3xl font-semibold mb-8 text-center">Gallery</h2>
 
   <!-- ROW 1 -->
   <div class="gallery-row">
-    <img src="images/dan1.jpg" alt="dance 1">
-    <img src="images/dan2.jpg" alt="dance 2">
-    <img src="images/dan3.jpg" alt="dance 3">
+    <img src="images/dan1.jpg" alt="Dance performance on stage" onclick="openLightbox(this)">
+    <img src="images/dan2.jpg" alt="Group dance rehearsal" onclick="openLightbox(this)">
+    <img src="images/dan3.jpg" alt="Hip hop dance show" onclick="openLightbox(this)">
   </div>
 
   <!-- ROW 2 -->
   <div class="gallery-row">
-    <img src="images/dan4.jpg" alt="dance 4">
-    <img src="images/dan5.jpg" alt="dance 5">
-    <img src="images/dan6.jpg" alt="dance 6">
+    <img src="images/dan4.jpg" alt="Contemporary dance performance" onclick="openLightbox(this)">
+    <img src="images/dan5.jpg" alt="Afro dance routine" onclick="openLightbox(this)">
+    <img src="images/dan6.jpg" alt="Heels choreography" onclick="openLightbox(this)">
   </div>
 
   <!-- ROW 3 -->
   <div class="gallery-row">
-    <img src="images/dan7.jpg" alt="dance 7">
-    <img src="images/dan8.jpg" alt="dance 8">
-    <img src="images/dan9.jpg" alt="dance 9">
-    <img src="images/dan10.jpg" alt="dance 10">
+    <img src="images/dan7.jpg" alt="Dance competition moment" onclick="openLightbox(this)">
+    <img src="images/dan8.jpg" alt="Stage rehearsal session" onclick="openLightbox(this)">
+    <img src="images/dan9.jpg" alt="Dance event celebration" onclick="openLightbox(this)">
+    <img src="images/dan10.jpg" alt="Finale group performance" onclick="openLightbox(this)">
   </div>
 
 </section>
+
+<!-- ================= LIGHTBOX ================= -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close-btn">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+  <p id="lightbox-caption"></p>
+</div>
+
 
 <!-- ================= VIDEO GALLERY ================= -->
 <section class="max-w-6xl mx-auto px-4 pb-20 md:pb-24 reveal">
@@ -179,5 +186,21 @@
 </footer>
 
 <script src="js/script.js"></script>
+<script>
+  function openLightbox(img){
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const caption = document.getElementById("lightbox-caption");
+
+    lightbox.style.display = "flex";
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    caption.innerText = img.alt;
+  }
+
+  function closeLightbox(){
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
 </body>
 </html>

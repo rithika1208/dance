@@ -65,6 +65,30 @@
 <!-- ================= MAIN ================= -->
 <main class="pt-28 md:pt-32">
 
+  <section class="hero-carousel">
+
+  <div class="carousel-container">
+
+    <div class="carousel-slide active">
+      <img src="images/dan1.jpg" alt="Dance performance stage">
+    </div>
+
+    <div class="carousel-slide">
+      <img src="images/dan2.jpg" alt="Dance rehearsal session">
+    </div>
+
+    <div class="carousel-slide">
+      <img src="images/dan5.jpg" alt="Group choreography show">
+    </div>
+
+    <!-- Buttons -->
+    <button class="carousel-btn left" onclick="prevSlide()">‹</button>
+    <button class="carousel-btn right" onclick="nextSlide()">›</button>
+
+  </div>
+
+</section>
+
 <!-- ================= HOME PAGE / HERO ================= -->
 <section class="max-w-6xl mx-auto px-4 pb-16 md:pb-24">
   <div class="grid md:grid-cols-2 gap-10 items-center hero-gradient rounded-3xl p-8 md:p-12 glass reveal">
@@ -102,6 +126,32 @@
       </div>
 
     </div>
+
+    <section class="home-section">
+  <h2>About Us</h2>
+  <p>
+    Pulse Dance Company is a leading dance academy in NYC,
+    offering professional training and performance programs.
+  </p>
+  <a href="about.html" class="read-more-btn">Read More</a>
+</section>
+
+<section class="home-section">
+  <h2>Our Services</h2>
+  <p>
+    We provide dance classes, choreography services, and
+    professional performance coaching for all levels.
+  </p>
+
+  <ul class="services-list">
+    <li>Dance Classes</li>
+    <li>Stage Performances</li>
+    <li>Private Coaching</li>
+  </ul>
+
+  <a href="classes.html" class="read-more-btn">Read More</a>
+</section>
+
 
     <!-- RIGHT IMAGE -->
     <div class="relative">
@@ -251,5 +301,27 @@
 </footer>
 
 <script src="js/script.js"></script>
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll(".carousel-slide");
+
+function showSlide(i){
+  slides.forEach(s => s.classList.remove("active"));
+  slides[i].classList.add("active");
+}
+
+function nextSlide(){
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+function prevSlide(){
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+setInterval(nextSlide, 4000);
+</script>
+
 </body>
 </html>
