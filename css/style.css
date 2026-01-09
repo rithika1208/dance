@@ -23,6 +23,62 @@ body {
   font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   padding-top: 80px;
 }
+
+p {
+  text-align: justify;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+}
+
+/* Center-only sections */
+.home-section,
+.services-hero,
+.services-cta {
+  text-align: center;
+}
+
+.home-section p,
+.services-hero p,
+.services-cta p {
+  text-align: center;
+}
+
+/* Cards text */
+.service-card p,
+.glass p,
+.footer-left p,
+.footer-col p {
+  text-align: left;
+}
+
+/* Lists */
+ul li {
+  text-align: left;
+}
+
+/* Gallery captions / lightbox */
+.lightbox p {
+  text-align: center;
+}
+
+/* Footer */
+.footer-bottom {
+  text-align: center;
+}
+
+/* Better readability */
+p {
+  max-width: 720px;
+}
+
+.glass p,
+.service-card p {
+  max-width: none;
+}
+
 /* ================= HERO CAROUSEL ================= */
 
 .hero-carousel{
