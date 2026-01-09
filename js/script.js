@@ -96,3 +96,16 @@ if ('serviceWorker' in navigator) {
     // window.location.reload();
   });
 }
+
+// Services page (optional)
+const cards = document.querySelectorAll(".service-card");
+
+window.addEventListener("scroll", () => {
+  cards.forEach(card => {
+    const pos = card.getBoundingClientRect().top;
+    if(pos < window.innerHeight - 80){
+      card.style.opacity = "1";
+      card.style.transform = "translateY(0)";
+    }
+  });
+});
