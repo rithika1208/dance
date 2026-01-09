@@ -19,20 +19,22 @@
     <meta property="og:type" content="website" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              accent: '#14f195',
-              'accent-2': '#6d28d9'
-            }
+ <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  if (window.tailwind) {
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#14f195',
+            'accent-2': '#6d28d9'
           }
         }
-      };
-    </script>
+      }
+    };
+  }
+</script>
+
   </head>
 
   <body class="bg-slate-950 text-slate-100" data-page="home">
@@ -266,7 +268,7 @@ function prevSlide(){
   showSlide(currentSlide);
 }
 
-setInterval(nextSlide, 4000);
+setInterval(nextSlide, 4000); 
 </script>
 
 </body>

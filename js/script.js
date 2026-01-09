@@ -21,10 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileMenu.classList.toggle('hidden');
     });
   }
-  
-  function toggleMobileMenu() {
-  document.getElementById("mobile-menu").classList.toggle("show");
-}
 
   const revealElements = document.querySelectorAll('.reveal');
   if (revealElements.length) {
@@ -64,6 +60,16 @@ document.addEventListener('DOMContentLoaded', () => {
     active.forEach((link) => link.classList.add('text-accent', 'font-semibold'));
   }
 });
+
+function toggleMainMenu() {
+  const menu = document.getElementById("mobile-menu");
+  if (!menu) {
+    console.log("mobile-menu not found");
+    return;
+  }
+  menu.classList.toggle("show");
+}
+
 
 // ================= SERVICE WORKER REGISTRATION =================
 // Register Service Worker for image caching
