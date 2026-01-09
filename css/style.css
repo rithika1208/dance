@@ -24,6 +24,7 @@ body {
   padding-top: 80px;
 }
 
+/* ----alignment ----- */
 p {
   text-align: justify;
 }
@@ -172,6 +173,8 @@ p {
   background:#14f195;
   color:#000;
 }
+
+
 
 /* navbar */
 .navbar {
