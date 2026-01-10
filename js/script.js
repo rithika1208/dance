@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
@@ -115,3 +116,4 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
