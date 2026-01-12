@@ -62,37 +62,37 @@
 
   <div class="services-grid">
 
-    <div class="service-card" >
+    <div class="service-card" onclick="openModal('western')">
       <h3>Western Dance</h3>
       <p>Energetic and expressive dance style focusing on rhythm, posture, and modern movements.</p>
       <p>Perfect for stage shows, competitions, and boosting confidence.</p>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openModal('bollywood')">
       <h3>Bollywood Dance</h3>
       <p>A vibrant mix of Indian and western moves inspired by film choreography.</p>
       <p>Great for celebrations, performances, and cultural events.</p>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openModal('folk')">
       <h3>Folk Dance</h3>
       <p>Traditional dance styles that celebrate culture and heritage.</p>
       <p>Helps students learn discipline, teamwork, and cultural pride.</p>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openModal('hiphop')">
       <h3>Hip Hop Dance</h3>
       <p>High-energy urban dance focusing on freestyle and groove techniques.</p>
       <p>Builds confidence, stamina, and stage presence.</p>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openModal('freestyle')">
       <h3>Freestyle Dance</h3>
       <p>Encourages dancers to express creativity with their own movements.</p>
       <p>Improves rhythm sense and individual performance style.</p>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openModal('contemporary')">
       <h3>Contemporary Dance</h3>
       <p>Elegant and emotional dance style blending ballet and modern techniques.</p>
       <p>Perfect for storytelling and expressive performances.</p>
@@ -108,37 +108,37 @@
 
   <div class="services-grid">
 
-    <div class="service-card">
+    <div class="service-card" onclick="openModal('zumba')">
       <h3>Zumba Fitness</h3>
       <p>Fun dance-based workout that burns calories and improves stamina.</p>
       <p>Perfect for staying fit while enjoying music and movement.</p>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openModal('aerobics')">
       <h3>Aerobics</h3>
       <p>High-energy workout sessions to improve heart health.</p>
       <p>Boosts flexibility, endurance, and overall fitness.</p>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openModal('stick')">
       <h3>Stick Workouts</h3>
       <p>Interactive fitness sessions using sticks for coordination.</p>
       <p>Improves focus, strength, and reflexes.</p>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openModal('chair')">
       <h3>Chair Workouts</h3>
       <p>Low-impact exercises suitable for beginners and seniors.</p>
       <p>Helps improve mobility and joint strength safely.</p>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openModal('ball')">
       <h3>Ball Workouts</h3>
       <p>Fun workouts using fitness balls for balance training.</p>
       <p>Strengthens core muscles and improves posture.</p>
     </div>
 
-    <div class="service-card">
+    <div class="service-card" onclick="openModal('leg')">
       <h3>Leg Workouts</h3>
       <p>Focused exercises to tone and strengthen leg muscles.</p>
       <p>Enhances stamina and flexibility for dancers and athletes.</p>
@@ -271,6 +271,16 @@
 
 <script src="js/services.js"></script>
 <script src="js/script.js"></script>
+
+<!-- ================= MODAL ================= -->
+<div id="serviceModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">×</span>
+    <h2 id="modalTitle"></h2>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
 
 </body>
 </html>
