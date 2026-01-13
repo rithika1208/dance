@@ -15,8 +15,8 @@
 * { scroll-behavior: smooth; }
 
 body {
-  background: #ffffff;
-  color: #000000;
+  background: #ffffff !important;
+  color: #000000 !important;
   font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   padding-top: 80px;
 }
