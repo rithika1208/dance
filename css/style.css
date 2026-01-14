@@ -342,7 +342,7 @@ ul li{
 }
 .about-box h3{
   color:#14f195;
-  font-size:22px;
+  font-size:20px;
   margin-bottom:12px;
 }
 .about-box ul{ padding-left:18px; }
@@ -403,6 +403,121 @@ ul li{
   margin-bottom:8px;
   line-height:1.6;
 }
+
+/* gaps for sections */
+.max-w-6xl{
+  margin-bottom:40px;   /* adds gap between sections */
+}
+ 
+
+/* =====================================================
+   GLOBAL GALAXY BORDER FOR ALL SECTIONS
+   Applies to About, Services, Home, Contact, etc.
+===================================================== */
+
+/* target every main section wrapper */
+.max-w-6xl > .grid,
+.max-w-6xl > .glass,
+.max-w-6xl > .grid.hero-gradient{
+  position: relative;
+  border-radius: 26px;
+  background: #fff;      /* keep your normal background */
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* -------- GLOWING BORDER LAYER -------- */
+.max-w-6xl > .grid::before,
+.max-w-6xl > .glass::before,
+.max-w-6xl > .grid.hero-gradient::before{
+  content:"";
+  position:absolute;
+  inset:-3px;
+  /* border-radius:28px;
+
+  background:linear-gradient(
+    120deg,
+    #7c7cff,
+    #14f195,
+    #ff5fd8,
+    #00e0ff,
+    #7c7cff
+  ); */
+  background-size:500% 500%;
+  animation:galaxyBorder 14s linear infinite;
+
+  z-index:-2;
+}
+
+/* -------- MASK TO SHOW ONLY BORDER -------- */
+.max-w-6xl > .grid::after,
+.max-w-6xl > .glass::after,
+.max-w-6xl > .grid.hero-gradient::after{
+  content:"";
+  position:absolute;
+  inset:3px;
+  border-radius:24px;
+  background:#fff;   /* keeps inner content normal */
+  z-index:-1;
+}
+
+/* -------- SOFT PROFESSIONAL GLOW -------- */
+.max-w-6xl > .grid,
+.max-w-6xl > .glass,
+.max-w-6xl > .grid.hero-gradient{
+  box-shadow:
+    0 0 16px rgba(124,124,255,0.35),
+    0 0 30px rgba(20,241,149,0.25);
+}
+
+/* -------- ANIMATION -------- */
+@keyframes galaxyBorder{
+  0%   { background-position:0% 50%; }
+  50%  { background-position:100% 50%; }
+  100% { background-position:0% 50%; }
+}
+
+
+
+/* =====================================================
+   MOBILE TUNING
+===================================================== */
+@media(max-width:768px){
+  section.max-w-6xl{
+    margin-bottom: 50px;
+  }
+
+  .max-w-6xl > .grid,
+  .max-w-6xl > .glass,
+  .max-w-6xl > .grid.hero-gradient{
+    border-radius: 20px;
+  }
+
+  .max-w-6xl > .grid::after,
+  .max-w-6xl > .glass::after,
+  .max-w-6xl > .grid.hero-gradient::after{
+    inset:2px;
+    border-radius:18px;
+  }
+}
+
+
+
+/* animation */
+@keyframes galaxyBorder{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/* mobile tuning */
+@media(max-width:768px){
+  .max-w-6xl{
+    margin-bottom:60px;
+  }
+}
+
+
 
 /* ================= NAVBAR ================= */
 .navbar {
@@ -787,7 +902,7 @@ ul li{
 
 .service-card h3{
   color:#14f195;
-  font-size:20px;
+  font-size:27px;
   margin-bottom:10px;
   font-weight:600;
 }
