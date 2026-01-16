@@ -90,14 +90,14 @@
   </p>
 
   <div style="max-width:420px">
-    <form>
+    <form action="https://formspree.io/f/maqqyvob" method="POST">
 
   <!-- FULL NAME -->
   <div class="input-group" style="margin-bottom:14px">
     <label style="display:block; font-size:14px; color:#9ca3af; margin-bottom:4px;">
       Full Name
     </label>
-    <input type="text" placeholder="Enter your name">
+    <input type="text"  name="name" placeholder="Enter your name" required>
   </div>
 
   <!-- EMAIL -->
@@ -105,7 +105,7 @@
     <label style="display:block; font-size:14px; color:#9ca3af; margin-bottom:4px;">
       Email Address
     </label>
-    <input type="email" placeholder="Enter your email">
+    <input type="email"  name="email"placeholder="Enter your email" required>
   </div>
 
   <!-- MESSAGE -->
@@ -113,7 +113,7 @@
     <label style="display:block; font-size:14px; color:#9ca3af; margin-bottom:4px;">
       Message
     </label>
-    <textarea rows="4" placeholder="Type your message here..."></textarea>
+    <textarea rows="4"  name="message" placeholder="Type your message here..." required></textarea>
   </div>
 
   <button type="submit"
