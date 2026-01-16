@@ -509,6 +509,7 @@ ul li{
     margin-bottom: 50px;
   }
 
+
   .max-w-6xl > .grid,
   .max-w-6xl > .glass,
   .max-w-6xl > .grid.hero-gradient{
@@ -535,7 +536,7 @@ ul li{
 /* mobile tuning */
 @media(max-width:768px){
   .max-w-6xl{
-    margin-bottom:60px;
+    margin-bottom:20px;
   }
 }
 
