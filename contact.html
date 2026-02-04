@@ -90,14 +90,14 @@
   </p>
 
   <div style="max-width:420px">
-    <form action="https://formspree.io/f/maqqyvob" method="POST">
+   <form id="whatsappForm">
 
   <!-- FULL NAME -->
   <div class="input-group" style="margin-bottom:14px">
     <label style="display:block; font-size:14px; color:#9ca3af; margin-bottom:4px;">
       Full Name
     </label>
-    <input type="text"  name="name" placeholder="Enter your name" required>
+    <input type="text" id="name" placeholder="Enter your name" required>
   </div>
 
   <!-- EMAIL -->
@@ -105,15 +105,15 @@
     <label style="display:block; font-size:14px; color:#9ca3af; margin-bottom:4px;">
       Email Address
     </label>
-    <input type="email"  name="email"placeholder="Enter your email" required>
+    <input type="email" id="email" placeholder="Enter your email" required>
   </div>
 
-  <!-- EMAIL -->
+  <!-- PHONE -->
   <div class="input-group" style="margin-bottom:14px">
     <label style="display:block; font-size:14px; color:#9ca3af; margin-bottom:4px;">
       Phone No
     </label>
-    <input type="phone"  name="phone"placeholder="Enter your phone No" required>
+    <input type="tel" id="phone" placeholder="Enter your phone No" required>
   </div>
 
   <!-- MESSAGE -->
@@ -121,20 +121,18 @@
     <label style="display:block; font-size:14px; color:#9ca3af; margin-bottom:4px;">
       Message
     </label>
-    <textarea rows="4"  name="message" placeholder="Type your message here..." required></textarea>
+    <textarea rows="4" id="message" placeholder="Type your message here..." required></textarea>
   </div>
 
   <button type="submit"
-    style="padding:10px 24px;border-radius:9999px; background: linear-gradient(
-  90deg,
-  #f9a8d4,
-  #ec4899,
-  #6d28d9
-);color:#000;font-weight:600;border:none;cursor:pointer;">
-    Send Message
+    style="padding:10px 24px;border-radius:9999px;
+           background:linear-gradient(90deg,#f9a8d4,#ec4899,#6d28d9);
+           color:#000;font-weight:600;border:none;cursor:pointer;">
+    Send via WhatsApp
   </button>
 
 </form>
+
 
   </div>
 </div>
@@ -222,7 +220,7 @@
       <div class="footer-col">
         <h4>Contact</h4>
         <p>305 W 38th St, New York</p>
-        <p>(212) 555-0192</p>
+        <p>9008760265 | 8147093265</p>
         <a href="mailto:hello@unitydance.co">hello@unitydance.co</a>
       </div>
 
@@ -235,5 +233,30 @@
 </footer>
 
 <script src="js/script.js"></script>
+<script>
+  document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const message = document.getElementById("message").value;
+
+    const whatsappNumber = "9481658605"; // YOUR NUMBER
+
+    const text =
+      `Hello Unity Dance Company,%0A%0A` +
+      `Name: ${name}%0A` +
+      `Email: ${email}%0A` +
+      `Phone: ${phone}%0A` +
+      `Message: ${message}`;
+
+    window.open(
+      `https://wa.me/${whatsappNumber}?text=${text}`,
+      "_blank"
+    );
+  });
+</script>
+
 </body>
 </html>
